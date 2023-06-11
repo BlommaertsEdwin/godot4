@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4tajk5vsgieu"]
+
+[ext_resource type="Texture2D" uid="uid://lxt5sq38lmyt" path="res://art/Sprout Lands - Sprites - Basic pack/Objects/Basic Furniture.png" id="1_w8yr8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bs2oh"]
+size = Vector2(11, 8)
+
+[node name="Flowerpot" type="Sprite2D"]
+texture = ExtResource("1_w8yr8")
+region_enabled = true
+region_rect = Rect2(48, 0, 16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_bs2oh")
